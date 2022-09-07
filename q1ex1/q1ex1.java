@@ -3,81 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package joji.supremacy;
-        import java.util.Scanner
+package q1ex1.mercado;
+
 /**
  *
  * @author TAU
  */
-public class JojiSupremacy {
+public class Q1Ex1Mercado {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //data types
-            int age = 69;
-            double money = 69.42;
-            boolean mayJowa = false;
-            char section = 'T';
-            String jp = "sad";
-        //operators
-            int sum = 3+4;
-            double div = 3/2.0;
-            //assignment operators
-            //+=, -=, /=, %=
-            //comparison operators (evaluates into boolean)
-            //logic operators (&&, !!, !)
-            //Ternary Moment
-        //control flow statements:
-            //if()
-                if(mayJowa){
-                    jp = "happy";
-                }
-                else{
-                   jp = "sad";
-                }
-        
-            //switch case
-                switch(day){
-                    case "monday":
-                        Monday;
-                    case "tuesday":
-                        Tuesday;
-                    break;
-                }
-        
-            //loops
-                //while
-                    while(!isDone){
-            
-                    }
-                //do while
-                    do{
-                
-                    }while(!isDone)
-                //for
-                for(int i = 0; i<10; i+=2){
-                }
-                //break&continue
-                if(count == 1){
-                    break;
-                    continue;
-                }
-        //I/O statements
-            //print
-                system.out.print();
-                println("My name is" + name + ".");
-                printf("My name is %s. My job is %s. My grade is %2f");
-            //Scanner
-                Scanner sc = new Scanner(System in);
-                System.out.print("What is your name?");
-                String name = "sc.nextline()";
-                System.out.print("Hello, %s");
-                int age = Integer.parseInt(sc.nextLine());
-    }
-                    
+        String[] students = {"John Paul Mercado", "Kendrik Adorna", "Gian Ong"};
+        int[] age = {15, 16, 16};
+        String[] sections = {"Tau", "Tau", "Tau"};
+        int totalAge = age[0] + age[1] + age[2];
+        boolean classmates = (sections[0] == sections[1] && sections[1] == sections[2]);
+        for(int i=1; i<4; i++){
+            System.out.println("Student " + i);
+            System.out.println("Name:" + students[i-1]);
+            System.out.println("Age:" + age[i-1] + " years old");
+            System.out.println("Section:" + sections[i-1]);
+            System.out.println("");
+        }
+        System.out.println("The total age of the 3 students: " + totalAge + " // (operation: sum)");
+        System.out.println("The 3 students are from the same section: " + classmates + " // (operation: comparison)");
     }
     
 }
