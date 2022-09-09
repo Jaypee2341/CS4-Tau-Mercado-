@@ -21,15 +21,17 @@ public class Q1Ex1Mercado {
         String[] sections = {"Tau", "Tau", "Tau"};
         int totalAge = age[0] + age[1] + age[2];
         boolean classmates = (sections[0] == sections[1] && sections[1] == sections[2]);
+        boolean sameAge = (age[0] == age[1] && age[1] == age[2]);
         for(int i=1; i<4; i++){
             System.out.println("Student " + i);
-            System.out.println("Name:" + students[i-1]);
-            System.out.println("Age:" + age[i-1] + " years old");
-            System.out.println("Section:" + sections[i-1]);
+            System.out.println("Name: " + students[i-1]);
+            System.out.println("Age: " + age[i-1] + " years old");
+            System.out.println("Section: " + sections[i-1]);
             System.out.println("");
         }
         System.out.println("The total age of the 3 students: " + totalAge + " // (operation: sum)");
         System.out.println("The 3 students are from the same section: " + classmates + " // (operation: comparison)");
+        System.out.println("The 3 students are the same age: " + sameAge + " // (operation: comparison)");
     }
     
 }
