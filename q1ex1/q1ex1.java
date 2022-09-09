@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package q1ex1.mercado;
+package q1ex1;
 
 /**
  *
  * @author TAU
  */
-public class Q1Ex1Mercado {
+public class Ex01TauMercado {
 
     /**
      * @param args the command line arguments
