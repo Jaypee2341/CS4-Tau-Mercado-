@@ -1,4 +1,4 @@
-public class Main {
+public class StoreSim {
   public static void main(String[] args) {
     // Create items
     Item i1 = new Item("Burger", "food", 50);
@@ -40,11 +40,11 @@ public class Main {
     mall.filterExpensive(1000);
 
     mcdo.sellItem(0);
-    mcdo.sellItem(50);
+    mcdo.sellItem(2);
     watsons.sellItem("Soap");
-    watsons.sellItem("Mouthwash");
+    watsons.sellItem("Shampoo");
     mall.sellItem(i7);
-    mall.sellItem(i3);
+    mall.sellItem(i9);
 
     // Check final earnings
     Store.printStats();
